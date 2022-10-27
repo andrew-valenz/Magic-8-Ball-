@@ -5,6 +5,25 @@ const promptSection = document.getElementById('prompt');
 const fortuneSection = document.getElementById('fortune');
 const answerP = document.getElementById('answer');
 /* Events */
+
+//function examples
+function doSomething() {
+    console.log('doing something');
+    return 42;
+}
+
+const doSomething2 = () = {
+    console.log('doing something (2)');
+};
+
+const doSomething3 = function () {
+    console.log('doing something (3)');
+}
+const myName = 'Andrew';
+
+const thing = doSomething;
+console.log(thing());
+
 const answers = [
     'Yes, definitely',
     'It is certain',
