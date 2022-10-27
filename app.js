@@ -1,9 +1,9 @@
-/* Imports */
-
 /* Get DOM Elements */
-
-/* State */
-
+const submitBtn = document.getElementById('submit');
+const resetBtn = document.getElementById('reset');
+const promptSection = document.getElementById('prompt');
+const fortuneSection = document.getElementById('fortune');
+const answerP = document.getElementById('answer');
 /* Events */
 
 /* Display Functions */
