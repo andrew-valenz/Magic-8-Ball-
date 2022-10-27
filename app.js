@@ -4,25 +4,8 @@ const resetBtn = document.getElementById('reset');
 const promptSection = document.getElementById('prompt');
 const fortuneSection = document.getElementById('fortune');
 const answerP = document.getElementById('answer');
+
 /* Events */
-
-//function examples
-function doSomething() {
-    console.log('doing something');
-    return 42;
-}
-
-const doSomething2 = () = {
-    console.log('doing something (2)');
-};
-
-const doSomething3 = function () {
-    console.log('doing something (3)');
-}
-const myName = 'Andrew';
-
-const thing = doSomething;
-console.log(thing());
 
 const answers = [
     'Yes, definitely',
@@ -46,18 +29,16 @@ const answers = [
     'Very doubtful',
 ];
 
-function toggleSelections() {
-    promptSection.classlist.toggle('hide');
-    fortuneSection.classlist.toggle('hide');
+//my functions
+function toggleSections() {
+    promptSection.classList.toggle('hide');
+    fortuneSection.classList.toggle('hide');
 }
 submitBtn.addEventListener('click', () => {
-    toggleSelections();
+    toggleSections();
 
-    //generate a random number between 0 and the length
-    // of the array minus 1
     const randInt = Math.floor(Math.random() * answers.length);
-
-    // set the text content to the random choice
+    const randomChoice = answers[randInt];
     answerP.textContent = randomChoice;
 });
 
