@@ -6,8 +6,6 @@ const fortuneSection = document.getElementById('fortune');
 const answerP = document.getElementById('answer');
 const clearInputBox = document.getElementById('text-input');
 
-/* Events */
-
 const answers = [
     'Yes, definitely',
     'It is certain',
