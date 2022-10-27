@@ -4,6 +4,7 @@ const resetBtn = document.getElementById('reset');
 const promptSection = document.getElementById('prompt');
 const fortuneSection = document.getElementById('fortune');
 const answerP = document.getElementById('answer');
+const clearInputBox = document.getElementById('text-input');
 
 /* Events */
 
@@ -40,6 +41,7 @@ submitBtn.addEventListener('click', () => {
     const randInt = Math.floor(Math.random() * answers.length);
     const randomChoice = answers[randInt];
     answerP.textContent = randomChoice;
+    clearInputBox.value = '';
 });
 
 resetBtn.addEventListener('click', toggleSections);
